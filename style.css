@@ -67,7 +67,7 @@ nav ul {
     background: #4CAF4F;
     color: white;
     border: none;
-    padding: 12px 28px;
+    padding: 10px 20px;
     border-radius: 6px;
     font-size: 16px;
     cursor: pointer;
@@ -81,7 +81,7 @@ nav ul {
     color: #4CAF4F;
     font-size: 16px;
     cursor: pointer;
-    padding: 10px 15px;
+    padding: 10px 20px;
 }
 
 #nav-menu a {
