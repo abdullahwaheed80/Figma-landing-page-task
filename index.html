@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/Logo.svg" alt="Logo"></a>
+        </div>
+        <!--Hamburger-->
+        <button id="hamburger" aria-label="Toggle menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#community">Service</a></li>
+                <li><a href="#feature">Feature</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#testimonial">Testimonial</a></li>
+                <li><a href="#footer">FAQ</a></li>
+            </ul>
+
+        </nav>
+        <div class="nav-buttons">
+                <button class="login-btn">Login</button>
+                <button class="signup-btn">Sign up</button>
+            </div>
+    </header>
+
+    <!-- Hero Carousel Wrapper Section -->
+    <section class="bg-light py-5">
+        <div class="container py-5">
+            <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner mt-4">
+
+                    <!-- Slide Item 1 -->
+                    <div class="carousel-item active">
+                        <div class="row align-items-center g-4">
+                            <div class="col-lg-7 text-start">
+                                <h1 class="display-4 fw-semibold text-dark mb-2">
+                                    Lessons and insights <br>
+                                    <span class="text-success">from 8 years</span>
+                                </h1>
+                                <p class="text-muted mb-4 fs-6">Where to grow your business as a photographer: site or
+                                    social media?</p>
+                                <button class="btn btn-success px-4 py-2 fw-medium border-0"
+                                    style="background-color: #4CAF4F;">Register</button>
+                            </div>
+                            <div class="col-lg-5 text-center">
+                                <img src="images/Illustration.svg" class="img-fluid"
+                                    alt="Lessons and insights illustration" style="max-height: 350px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide Item 2 -->
+                    <div class="carousel-item">
+                        <div class="row align-items-center g-4">
+                            <div class="col-lg-7 text-start">
+                                <h1 class="display-4 fw-semibold text-dark mb-2">
+                                    Grow your brand <br>
+                                    <span class="text-success">with smart web design</span>
+                                </h1>
+                                <p class="text-muted mb-4 fs-6">Discover structural strategies that convert everyday
+                                    visitors into active customers.</p>
+                                <button class="btn btn-success px-4 py-2 fw-medium border-0"
+                                    style="background-color: #4CAF4F;" id="carousel-btn">Register</button>
+                            </div>
+                            <div class="col-lg-5 text-center">
+                                <img src="images/Illustration2.svg" class="img-fluid"
+                                    alt="Business strategy illustration" style="max-height: 350px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide Item 3 -->
+                    <div class="carousel-item">
+                        <div class="row align-items-center g-4">
+                            <div class="col-lg-7 text-start">
+                                <h1 class="display-4 fw-semibold text-dark mb-2">
+                                    Inspire Generations <br>
+                                    <span class="text-success">with Our Expertise</span>
+                                </h1>
+                                <p class="text-muted mb-4 fs-6">Discover how our expertise can inspire the next
+                                    generation of leaders.</p>
+                                <button class="btn btn-success px-4 py-2 fw-medium border-0"
+                                    style="background-color: #4CAF4F;">Register</button>
+                            </div>
+                            <div class="col-lg-5 text-center">
+                                <img src="images/hero-illustration2.svg" class="img-fluid"
+                                    alt="Business strategy illustration" style="max-height: 350px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-indicators position-relative mt-5 mb-0 justify-content-center gap-2">
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0"
+                        class="active rounded-circle bg-success" style="width: 10px; height: 10px;" aria-current="true"
+                        aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"
+                        class="rounded-circle bg-success opacity-25" style="width: 10px; height: 10px;"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"
+                        class="rounded-circle bg-success opacity-25" style="width: 10px; height: 10px;"
+                        aria-label="Slide 3"></button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients
+    <section class="clients">
+        <h2>Our Clients</h2>
+        <div class="logos">
+            <img src="">
+            <img src="">
+            <img src="">
+            <img src="">
+            <img src="">
+            <img src="">
+            <img src="">
+        </div>
+    </section> -->
+
+    <!-- Community -->
+    <section class="community" id="community">
+        <h2>Manage your entire community</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="images/Icon-member-1.svg" alt="Membership Icon" width="100px" height="100px"
+                    style="justify-content: center; align-items: center; display: flex;">
+                <h3>Membership Organisations</h3>
+                <p>Our membership management software.</p>
+            </div>
+
+            <div class="card">
+                <img src="images/Icon-member-2.svg" alt="National Associations Icon" width="100px" height="100px"
+                    style="justify-content: center; align-items: center; display: flex;">
+                <h3>National Associations</h3>
+                <p>Automate membership renewals.</p>
+            </div>
+
+            <div class="card">
+                <img src="images/Icon-member-3.svg" alt="Clubs And Groups Icon" width="100px" height="100px"
+                    style="justify-content: center; align-items: center; display: flex;">
+                <h3>Clubs And Groups</h3>
+                <p>Manage members efficiently.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Feature 1 -->
+    <section class="feature" id="feature">
+        <div class="feature-image">
+            <img src="images/Frame 35.svg">
+        </div>
+
+        <div class="feature-content">
+            <h2>The unseen of spending three years at Pixelgrade</h2>
+
+            <p>
+               At Nexcent, we empower modern enterprises to streamline their workflows, optimize team collaboration, and accelerate digital growth through innovative, design-driven technical solutions. By bridging the gap between cutting-edge development and seamless user experiences, we help businesses transform complex logistical challenges into intuitive, scalable operations. Whether you are aiming to revitalize your current digital architecture or build structural web strategies from the ground up, our dedicated team delivers the robust framework and reliable insights needed to future-proof your brand and drive sustainable income in an ever-evolving marketplace.
+            </p>
+
+            <button class="btn">Learn More</button>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+        <div class="left">
+            <h2>Helping a local <br>
+                <span>business reinvent itself</span>
+            </h2>
+        </div>
+
+        <div class="right">
+            <div class="stat"><img src="images/Icon1.svg" alt="Members"> 2,245,341 Members</div>
+            <div class="stat"><img src="images/Icon2.svg" alt="Clubs"> 46,328 Clubs</div>
+            <div class="stat"><img src="images/Icon3.svg" alt="Event Bookings"> 828,867 Event Bookings</div>
+            <div class="stat"><img src="images/Icon4.svg" alt="Payments"> 1,926,436 Payments</div>
+        </div>
+    </section>
+
+    <!-- Feature 2 -->
+    <section class="feature">
+        <div class="feature-image">
+            <div class="image-stack">
+                <img src="images/Device.svg" class="img-device" alt="Phone Frame">
+                <img src="images/Character.svg" class="img-character" alt="User Character">
+                <img src="images/speech-bubble.svg" class="img-bubble" alt="Thumbs Up Bubble">
+                <img src="images/Padlock.svg" class="img-padlock" alt="Green Lock">
+                <img src="images/Plant.svg" class="img-plant" alt="Background Leaf">
+            </div>
+        </div>
+
+        <div class="feature-content">
+            <h2>How to design your site footer like we did</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
+            <button class="btn">Learn More</button>
+        </div>
+    </section>
+
+
+    <!-- Testimonial -->
+    <section class="testimonial" id="testimonial">
+
+        <img src="images/testimonial-image.png" alt="Testimonial Image">
+
+        <div>
+            <p>We have seen a significant increase in our overall team efficiency and project turnaround times since
+                integrating this platform into our daily workflow. The layout is incredibly intuitive, making it
+                seamless for our design and engineering departments to collaborate on complex asset builds without any
+                technical friction. It has completely transformed the way we handle structural web strategies and
+                digital scaling. The support team has been exceptional throughout our onboarding process, consistently
+                delivering quick and reliable solutions tailored to our unique needs.</p>
+
+            <h4>Holly Wheeler</h4>
+
+        </div>
+
+    </section>
+
+    <!-- Marketing -->
+
+    <section class="marketing-section" id="product">
+
+        <div class="section-header">
+            <h2>Caring is the new marketing</h2>
+            <p>The Nexcent blog is the best place to read about the latest membership insights, trends and more. See
+                who's joining the community, read about how our community are increasing their membership income and
+                lot's more.</p>
+        </div>
+
+        <div class="cards-grid">
+
+            <!-- Card 1 -->
+            <div class="marketing-card">
+                <div class="card-image-box">
+                    <img src="images/image-blog.png" alt="Person working on couch">
+                </div>
+                <div class="card-content-overlay">
+                    <h3>Creating Streamlined Safeguarding Processes with OneRen</h3>
+                    <a href="#" class="readme-btn">Readmore <span>&rarr;</span></a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="marketing-card">
+                <div class="card-image-box">
+                    <img src="images/image-blog-2.png" alt="Laptop showing analytics data charts">
+                </div>
+                <div class="card-content-overlay">
+                    <h3>What are your safeguarding responsibilities?</h3>
+                    <a href="#" class="readme-btn">Readmore <span>&rarr;</span></a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="marketing-card">
+                <div class="card-image-box">
+                    <img src="images/image-blog-3.png" alt="Aerial layout view of typing on a computer laptop">
+                </div>
+                <div class="card-content-overlay">
+                    <h3>Revamp the Membership Model with Triathlon Australia</h3>
+                    <a href="#" class="readme-btn">Readmore <span>&rarr;</span></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Demo Section -->
+    <section class="demo-section">
+        <h1>Get a Demo of Our Platform and See the Difference</h1>
+
+        <button class="btn">
+            Get a Demo
+        </button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="logo" id="footer">
+            <img src="images/footer-logo.svg" alt="Logo">
+        </div>
+
+
+        <div>
+            <h4>Company</h4>
+            <p>About us</p>
+            <p>Blog</p>
+            <p>Contact us</p>
+            <p>Testimonials</p>
+            <p>Pricing</p>
+        </div>
+
+        <div>
+            <h4>Support</h4>
+            <p>Help center</p>
+            <p>Terms</p>
+            <p>Privacy policy</p>
+            <p>Security</p>
+            <p>Status</p>
+        </div>
+
+        <div>
+            <h4>Stay up to date</h4>
+            <div class="input-part">
+                <input type="email" placeholder="Enter your email address">
+                <img src="images/send.svg" alt="send-icon">
+            </div>
+        </div>
+
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
